@@ -3,6 +3,7 @@
 1. Finish making story line
 2. Finish function to make blinking text
 3. Begin coding draft 1
+4. Make Psuedo-code
 
 # Comments:
 
