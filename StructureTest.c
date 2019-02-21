@@ -6,7 +6,8 @@
 */
 
 #include <windows.h>
-#include <string.h>            
+#include <string.h>
+#include<conio.h>            
 #include <stdio.h>    
 
 void TypeWithColor(int ColorCode, int TypeSpeed, char text[]);
@@ -40,6 +41,7 @@ void main()
 }
 
 /*
+This function replaces the majority of the uses of printf, types with color and effect.
 Codex:
 
 Name         | Value
@@ -88,4 +90,6 @@ void TypeWithColor(int ColorCode, int TypeSpeed, char text[])
     	Sleep(TypeSpeed);
 		nCurrentCharacter += 1;   
 	}
+	
+	SetConsoleTextAttribute(Output, 15 & 0x0F);
 }
