@@ -14,7 +14,13 @@ void TypeWithColor(int ColorCode, int TypeSpeed, char text[]);
 void main()
 {
 	int choice;
-	int nTimeRemaining = 0;
+	int nTimeRemaining = 1;
+	char content[] = "There is a cat stucked in a burning tree.";
+	char q1[] = "What do you do?";
+	char a1[] = "1. Jump out of the window";
+	char a2[] = "2. Run down as quick as fuck down the stairs";
+	char q2[] = "You're already in your lawn where the burning tree is. You see a hose to your left and a dog to your right. ";
+	
 	
 	while(nTimeRemaining < 11)
 	{
