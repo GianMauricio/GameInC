@@ -1,70 +1,76 @@
 /*
 *	Author: Gian Mauricio
-<<<<<<< HEAD
 *	AUthor: Cyle Marty
 *	Ext. Reference: StackOverflow
 *	Purpose: Draft for the game using Story 1
 * 	Notes: Any and all changes to the game will be reflected here
-=======
-*	Ext. Reference: StackOverflow
-*	Purpose: Structural Template for game
-* 	Notes: This script also serves as the test script for new features to the game
->>>>>>> 68785a6b6c8748456df0b137f5a83b90e4a21eee
 */
 
 #include <windows.h>
-#include <string.h>            
-#include <stdio.h>    
+#include <string.h>
+#include <stdio.h>
 
 void TypeWithColor(int ColorCode, int TypeSpeed, char text[]);
 
 void main()
 {
 	int choice;
-<<<<<<< HEAD
 	int nTimeRemaining = 1;
 	
+	//Initiaization of the Player struct
+	Player.Arms = 1;
+	Player.Legs = 1;
+	Player.Energy = 100;
+	Player.Observation = 0;
+	Player.location = "Room";
+
 	//This belongs to Case 1 (1 Choice, 2 options)
 	char content[] = "There is a cat stucked in a burning tree.";
 	char q1[] = "What do you do?";
-	char a1[] = "1. Jump out of the window";
-	char a2[] = "2. Run down as quick as fuck down the stairs";
-	
+		char a1[] = "1. Jump out of the window";
+		char a2[] = "2. Run down as quick as fuck down the stairs";
+
 	//This belongs to Case 2 (1 Choice, )
 	char q2[] = "You're already in your lawn where the burning tree is. You see a hose to your left and a dog to your right. ";
-	
-=======
-	int nTimeRemaining = 0;
->>>>>>> 68785a6b6c8748456df0b137f5a83b90e4a21eee
-	
+
+
 	while(nTimeRemaining < 11)
 	{
 		switch (nTimeRemaining)
 		{
-			case 1: 
-<<<<<<< HEAD
-=======
-				char content[] = "There is a cat stucked in a burning tree.";
-				char q1[] = "What do you do?";
-				char a1[] = "1. Jump out of the window";
-				char a2[] = "2. Run down as quick as fuck down the stairs";
-				char q2[] = "You're already in your lawn where the burning tree is. You see a hose to your left and a dog to your right. ";
-				
->>>>>>> 68785a6b6c8748456df0b137f5a83b90e4a21eee
-				TypeWithColor(15, 50, content); 
+			case 1:
+				TypeWithColor(15, 50, content);
+				printf("\n");
+
+				TypeWithColor(12, 10, q1);
+				printf("\n");
+
+				TypeWithColor(9, 50, a1);
+				printf("\n");
+				TypeWithColor(10, 50, a2);
 				printf("\n");
 				
-				TypeWithColor(12, 10, q1); 
-				printf("\n");
+				scanf("%d", &choice);
 				
-				TypeWithColor(9, 50, a1); 
-				printf("\n");
-				TypeWithColor(10, 50, a2); 
-				printf("\n");
+				if (choice == 1)
+				{
+					Player.Arms = 0;
+					Player.location = "Front_Yard";
+				}
+				
+				else if (choice == 2)
+				{
+					Player.Legs = 0;
+					Player.location = "Living_Room";
+				}
+				
+				nTimeRemaning = 2;
+				
 				break;
-			case 2: 
+			case 2:
+				
 				break;
-		    case 3: 
+		    case 3:
 		    	break;
 		}
 	}
@@ -97,37 +103,35 @@ void TypeWithColor(int ColorCode, int TypeSpeed, char text[])
 	//Using size_t ensures that the array is fully represented
 	size_t nTextLength = strlen(text);
 	int nCurrentCharacter = 0;
-	
+
 	//Takes the background attribute
-    WORD wColor;               
+    WORD wColor;
     HANDLE Output = GetStdHandle(STD_OUTPUT_HANDLE);
-    CONSOLE_SCREEN_BUFFER_INFO Screen;   
-    
-    
+    CONSOLE_SCREEN_BUFFER_INFO Screen;
+
+
     if(GetConsoleScreenBufferInfo(Output, &Screen))
     {
          //To mask out all but the background attribute, and to add the color
          wColor = (Screen.wAttributes & 0xF0) + (ColorCode & 0x0F);
          SetConsoleTextAttribute(Output, wColor);
     }
-    
+
     //Types out the input string
     while(nCurrentCharacter <= nTextLength)
 	{
     	printf("%c", text[nCurrentCharacter]);
     	//Delays the execution of the next character by a certain amount of time
     	Sleep(TypeSpeed);
-		nCurrentCharacter += 1;   
+		nCurrentCharacter += 1;
 	}
 }
-<<<<<<< HEAD
 
 struct Player
 {
-	Arms = 1;
-	Legs = 1;
-	Eneergy = 100;
-	Observation = 0;
-}
-=======
->>>>>>> 68785a6b6c8748456df0b137f5a83b90e4a21eee
+	int *Arms;
+	int *Legs;
+	int *Energy;
+	int *Observation;
+	char location[];
+} Player_a;
