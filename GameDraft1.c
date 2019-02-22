@@ -1,9 +1,15 @@
 /*
 *	Author: Gian Mauricio
+<<<<<<< HEAD
 *	AUthor: Cyle Marty
 *	Ext. Reference: StackOverflow
 *	Purpose: Draft for the game using Story 1
 * 	Notes: Any and all changes to the game will be reflected here
+=======
+*	Ext. Reference: StackOverflow
+*	Purpose: Structural Template for game
+* 	Notes: This script also serves as the test script for new features to the game
+>>>>>>> 68785a6b6c8748456df0b137f5a83b90e4a21eee
 */
 
 #include <windows.h>
@@ -15,6 +21,7 @@ void TypeWithColor(int ColorCode, int TypeSpeed, char text[]);
 void main()
 {
 	int choice;
+<<<<<<< HEAD
 	int nTimeRemaining = 1;
 	
 	//This belongs to Case 1 (1 Choice, 2 options)
@@ -26,12 +33,24 @@ void main()
 	//This belongs to Case 2 (1 Choice, )
 	char q2[] = "You're already in your lawn where the burning tree is. You see a hose to your left and a dog to your right. ";
 	
+=======
+	int nTimeRemaining = 0;
+>>>>>>> 68785a6b6c8748456df0b137f5a83b90e4a21eee
 	
 	while(nTimeRemaining < 11)
 	{
 		switch (nTimeRemaining)
 		{
 			case 1: 
+<<<<<<< HEAD
+=======
+				char content[] = "There is a cat stucked in a burning tree.";
+				char q1[] = "What do you do?";
+				char a1[] = "1. Jump out of the window";
+				char a2[] = "2. Run down as quick as fuck down the stairs";
+				char q2[] = "You're already in your lawn where the burning tree is. You see a hose to your left and a dog to your right. ";
+				
+>>>>>>> 68785a6b6c8748456df0b137f5a83b90e4a21eee
 				TypeWithColor(15, 50, content); 
 				printf("\n");
 				
@@ -101,6 +120,7 @@ void TypeWithColor(int ColorCode, int TypeSpeed, char text[])
 		nCurrentCharacter += 1;   
 	}
 }
+<<<<<<< HEAD
 
 struct Player
 {
@@ -109,3 +129,5 @@ struct Player
 	Eneergy = 100;
 	Observation = 0;
 }
+=======
+>>>>>>> 68785a6b6c8748456df0b137f5a83b90e4a21eee
