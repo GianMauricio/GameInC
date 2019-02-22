@@ -12,34 +12,57 @@
 
 void TypeWithColor(int ColorCode, int TypeSpeed, char text[]);
 
+struct Player
+{
+	int Arms;
+	int Legs;
+	int Energy;
+	int Observation;
+	char location[];
+} Player_a;
+
 void main()
 {
 	int choice;
 	int nTimeRemaining = 1;
-	
-	//Initiaization of the Player struct
-	Player.Arms = 1;
-	Player.Legs = 1;
-	Player.Energy = 100;
-	Player.Observation = 0;
-	Player.location = "Room";
+	int nTimeTaken = 0;
+
+	struct Player Player_a;
+
+	//Initiaization of the Player_a struct
+	Player_a.Arms = 1;
+	Player_a.Legs = 1;
+	Player_a.Energy = 100;
+	Player_a.Observation = 0;
+	strcpy(Player_a.location, "Room");
+
+	//This will serve as the premise
+	char Content[] = "Your";
+	char pet[] = " pet ";
+	char moreContent[] = "is stuck in a";
+	char burning[] = " burning ";
+	char lastContent[] = "tree.";
 
 	//This belongs to Case 1 (1 Choice, 2 options)
-	char content[] = "There is a cat stucked in a burning tree.";
 	char q1[] = "What do you do?";
-		char a1[] = "1. Jump out of the window";
-		char a2[] = "2. Run down as quick as fuck down the stairs";
+		char a1[] = "1. Jump out of the window.";
+		char a2[] = "2. Run down as quick as fuck down the stairs.";
+		char a3[] = "3. Jump down the stairs.";
+		char OIL = "4. Look Around";
 
 	//This belongs to Case 2 (1 Choice, )
 	char q2[] = "You're already in your lawn where the burning tree is. You see a hose to your left and a dog to your right. ";
-
-
+	
 	while(nTimeRemaining < 11)
 	{
 		switch (nTimeRemaining)
 		{
 			case 1:
-				TypeWithColor(15, 50, content);
+				TypeWithColor(15, 50, Content);
+				TypeWithColor(14, 50, pet);
+				TypeWithColor(15, 50, moreContent);
+				TypeWithColor(12, 50, burning);
+				TypeWithColor(15, 50, lastContent);
 				printf("\n");
 
 				TypeWithColor(12, 10, q1);
@@ -49,26 +72,45 @@ void main()
 				printf("\n");
 				TypeWithColor(10, 50, a2);
 				printf("\n");
-				
+				TypeWithColor(10, 50, a3);
+				printf("\n");
+				TypeWithColor(10, 50, OIL);
+				printf("\n");
+
 				scanf("%d", &choice);
-				
+
 				if (choice == 1)
 				{
-					Player.Arms = 0;
-					Player.location = "Front_Yard";
+					Player_a.Arms = 0;
+					Player_a.Energy = 90;
+					strcpy(Player_a.location, "Front_Yard");
+
+					nTimeTaken = 1;
 				}
-				
+
 				else if (choice == 2)
 				{
-					Player.Legs = 0;
-					Player.location = "Living_Room";
+					Player_a.Legs = 0;
+					Player_a.Energy = 90;
+					strcpy(Player_a.location, "Front_Yard");
+
+					nTimeTaken = 1;
 				}
-				
-				nTimeRemaning = 2;
-				
+
+				else if (choice == 3)
+				{
+					Player_a.Legs = 0;
+					Player_a.Energy = 90;
+					strcpy(Player_a.location, "Front_Yard");
+
+					nTimeTaken = 1;
+				}
+
+				nTimeRemaining = nTimeRemaining - nTimeTaken;
+
 				break;
 			case 2:
-				
+
 				break;
 		    case 3:
 		    	break;
@@ -126,12 +168,3 @@ void TypeWithColor(int ColorCode, int TypeSpeed, char text[])
 		nCurrentCharacter += 1;
 	}
 }
-
-struct Player
-{
-	int *Arms;
-	int *Legs;
-	int *Energy;
-	int *Observation;
-	char location[];
-} Player_a;
