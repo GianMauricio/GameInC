@@ -12,80 +12,84 @@
 
 void TypeWithColor(int ColorCode, int TypeSpeed, char text[]);
 
-/*
+//Stores the players' choices
 struct Player
 {
-	int Arms;
-	int Legs;
-	int Energy;
-	int Observation;
-	char location[];
+	int Choice1;
+	int Choice2;
+	int Choice3;
+	int Choice4;
+	int Choice5;
 } Player_a;
-*/
+
 
 void main()
 {
-	int choice;
 	int nTimeRemaining = 1;
-	int nTimeTaken = 0;
-/*
+
+	//Creation of new struct based on Player
 	struct Player Player_a;
 
 	//Initiaization of the Player_a struct
-	Player_a.Arms = 1;
-	Player_a.Legs = 1;
-	Player_a.Energy = 100;
-	Player_a.Observation = 0;
-	strcpy(Player_a.location, "Room");
-*/
+	Player_a.Choice1 = 0;
+	Player_a.Choice2 = 0;
+	Player_a.Choice3 = 0;
+	Player_a.Choice4 = 0;
+	Player_a.Choice5 = 0;
 
-	//These will serve as the premise
+	//These will serve as the premise for choice 1
 	char Content[] = "Your";
-	char pet[] = "pet";
-	char moreContent[] = "is stuck in a";
-	char burning[] = "burning";
-	char lastContent[] = "tree.";
+		char pet[] = "pet";
+		char moreContent[] = "is stuck in a";
+		char burning[] = "burning";
+		char lastContent[] = "tree.";
 
 	//These belong to Case 1 (1 Choice, 2 options)
 	char firstChoice[] = "What do you do?";
 		char startA1[] = "1.";
-			char actionA1[] = "Run";
+		char actionA1[] = "Run";
 		char endA1[] = "down as quick as fuck down the stairs.";
 
 		char startA2[] = "2.";
-			char actionA2[] = "Jump";
+		char actionA2[] = "Jump";
 		char endA2[] = "down the stairs.";
 
 	//This belongs to Case 2 (1 Choice, )
-	char q2[] = "You're already in your lawn where the burning tree is. You see a hose to your left and a dog to your right. ";
+	char secondChoice[] = "You're already in your lawn where the burning tree is. You see a hose to your left and a dog to your right. ";
 
 	while(nTimeRemaining < 11)
 	{
 		switch (nTimeRemaining)
 		{
-			case 1:
-				TypeWithColor(15, 50, Content);
-				TypeWithColor(14, 50, pet);
-				TypeWithColor(15, 50, moreContent);
-				TypeWithColor(12, 50, burning);
-				TypeWithColor(15, 50, lastContent);
-				printf("\n");
+				case 1:
+					TypeWithColor(15, 50, Content);
+					TypeWithColor(14, 50, pet);
+					TypeWithColor(15, 50, moreContent);
+					TypeWithColor(12, 50, burning);
+					TypeWithColor(15, 50, lastContent);
+					printf("\n");
 
-				TypeWithColor(15, 30, firstChoice);
-				printf("\n");
+					TypeWithColor(15, 30, firstChoice);
+					printf("\n");
 
-				TypeWithColor(15, 50, startA1);
-				TypeWithColor(14, 50, actionA1);
-				TypeWithColor(15, 50, endA1);
-				printf("\n");
+					TypeWithColor(15, 50, startA1);
+					TypeWithColor(14, 50, actionA1);
+					TypeWithColor(15, 50, endA1);
+					printf("\n");
 
-				TypeWithColor(15, 50, startA2);
-				TypeWithColor(12, 50, actionA2);
-				TypeWithColor(15s, 50, endA2);
-				printf("\n");
+					TypeWithColor(15, 50, startA2);
+					TypeWithColor(12, 50, actionA2);
+					TypeWithColor(15, 50, endA2);
+					printf("\n");
 
-				printf(">>");s
-				scanf("%d", &choice);
+					printf(">>");
+					scanf("%d", &Player_a.Choice1);
+
+					nTimeRemaining = 2;
+					break;
+
+				case 2:
+
 		}
 	}
 }
