@@ -12,6 +12,7 @@
 
 void TypeWithColor(int ColorCode, int TypeSpeed, char text[]);
 
+/*
 struct Player
 {
 	int Arms;
@@ -20,13 +21,14 @@ struct Player
 	int Observation;
 	char location[];
 } Player_a;
+*/
 
 void main()
 {
 	int choice;
 	int nTimeRemaining = 1;
 	int nTimeTaken = 0;
-
+/*
 	struct Player Player_a;
 
 	//Initiaization of the Player_a struct
@@ -35,24 +37,28 @@ void main()
 	Player_a.Energy = 100;
 	Player_a.Observation = 0;
 	strcpy(Player_a.location, "Room");
+*/
 
-	//This will serve as the premise
+	//These will serve as the premise
 	char Content[] = "Your";
-	char pet[] = " pet ";
+	char pet[] = "pet";
 	char moreContent[] = "is stuck in a";
-	char burning[] = " burning ";
+	char burning[] = "burning";
 	char lastContent[] = "tree.";
 
-	//This belongs to Case 1 (1 Choice, 2 options)
-	char q1[] = "What do you do?";
-		char a1[] = "1. Jump out of the window.";
-		char a2[] = "2. Run down as quick as fuck down the stairs.";
-		char a3[] = "3. Jump down the stairs.";
-		char OIL = "4. Look Around";
+	//These belong to Case 1 (1 Choice, 2 options)
+	char firstChoice[] = "What do you do?";
+		char startA1[] = "1.";
+			char actionA1[] = "Run";
+		char endA1[] = "down as quick as fuck down the stairs.";
+
+		char startA2[] = "2.";
+			char actionA2[] = "Jump";
+		char endA2[] = "down the stairs.";
 
 	//This belongs to Case 2 (1 Choice, )
 	char q2[] = "You're already in your lawn where the burning tree is. You see a hose to your left and a dog to your right. ";
-	
+
 	while(nTimeRemaining < 11)
 	{
 		switch (nTimeRemaining)
@@ -65,55 +71,21 @@ void main()
 				TypeWithColor(15, 50, lastContent);
 				printf("\n");
 
-				TypeWithColor(12, 10, q1);
+				TypeWithColor(15, 30, firstChoice);
 				printf("\n");
 
-				TypeWithColor(9, 50, a1);
-				printf("\n");
-				TypeWithColor(10, 50, a2);
-				printf("\n");
-				TypeWithColor(10, 50, a3);
-				printf("\n");
-				TypeWithColor(10, 50, OIL);
+				TypeWithColor(15, 50, startA1);
+				TypeWithColor(14, 50, actionA1);
+				TypeWithColor(15, 50, endA1);
 				printf("\n");
 
+				TypeWithColor(15, 50, startA2);
+				TypeWithColor(12, 50, actionA2);
+				TypeWithColor(15s, 50, endA2);
+				printf("\n");
+
+				printf(">>");s
 				scanf("%d", &choice);
-
-				if (choice == 1)
-				{
-					Player_a.Arms = 0;
-					Player_a.Energy = 90;
-					strcpy(Player_a.location, "Front_Yard");
-
-					nTimeTaken = 1;
-				}
-
-				else if (choice == 2)
-				{
-					Player_a.Legs = 0;
-					Player_a.Energy = 90;
-					strcpy(Player_a.location, "Front_Yard");
-
-					nTimeTaken = 1;
-				}
-
-				else if (choice == 3)
-				{
-					Player_a.Legs = 0;
-					Player_a.Energy = 90;
-					strcpy(Player_a.location, "Front_Yard");
-
-					nTimeTaken = 1;
-				}
-
-				nTimeRemaining = nTimeRemaining - nTimeTaken;
-
-				break;
-			case 2:
-
-				break;
-		    case 3:
-		    	break;
 		}
 	}
 }
@@ -142,29 +114,29 @@ White        |   15
 */
 void TypeWithColor(int ColorCode, int TypeSpeed, char text[])
 {
-	//Using size_t ensures that the array is fully represented
-	size_t nTextLength = strlen(text);
-	int nCurrentCharacter = 0;
+		//Using size_t ensures that the array is fully represented
+		size_t nTextLength = strlen(text);
+		int nCurrentCharacter = 0;
 
-	//Takes the background attribute
-    WORD wColor;
-    HANDLE Output = GetStdHandle(STD_OUTPUT_HANDLE);
-    CONSOLE_SCREEN_BUFFER_INFO Screen;
+		//Takes the background attribute
+	  WORD wColor;
+	  HANDLE Output = GetStdHandle(STD_OUTPUT_HANDLE);
+	  CONSOLE_SCREEN_BUFFER_INFO Screen;
 
 
     if(GetConsoleScreenBufferInfo(Output, &Screen))
     {
-         //To mask out all but the background attribute, and to add the color
-         wColor = (Screen.wAttributes & 0xF0) + (ColorCode & 0x0F);
-         SetConsoleTextAttribute(Output, wColor);
+	       //To mask out all but the background attribute, and to add the color
+	       wColor = (Screen.wAttributes & 0xF0) + (ColorCode & 0x0F);
+	       SetConsoleTextAttribute(Output, wColor);
     }
 
     //Types out the input string
     while(nCurrentCharacter <= nTextLength)
-	{
-    	printf("%c", text[nCurrentCharacter]);
-    	//Delays the execution of the next character by a certain amount of time
-    	Sleep(TypeSpeed);
-		nCurrentCharacter += 1;
-	}
+		{
+	    	printf("%c", text[nCurrentCharacter]);
+	    	//Delays the execution of the next character by a certain amount of time
+	    	Sleep(TypeSpeed);
+				nCurrentCharacter += 1;
+		}
 }
