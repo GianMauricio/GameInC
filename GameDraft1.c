@@ -87,7 +87,7 @@ void main()
 					TypeWithColor(15, 50, "outside your window you see a");
 					TypeWithColor(12, 50, "horrific");
 					TypeWithColor(15, 50, "sight.");
-					printf("\n")
+					printf("\n");
 
 					TypeWithColor(15, 50, "Your");
 					TypeWithColor(14, 50, "pet");
@@ -342,7 +342,37 @@ void main()
 							TypeWithColor(12, 50, "confusion");
 							TypeWithColor(15, 50, "perfectly exucute the");
 							TypeWithColor(14, 50, "\"Floss\"");
-							TypeWithColor(15, 50, "and the")
+							TypeWithColor(15, 50, "and the");
+							TypeWithColor(14, 50, "\"Default Dance\".");
+							printf("\n");
+
+							TypeWithColor(15, 50, "The sky disliked that.");
+							printf("\n");
+
+							TypeWithColor(15, 50, "In response to your");
+							TypeWithColor(12, 50, "shameful display");
+							TypeWithColor(15, 50, "and loss of dignity.");
+							printf("\n");
+
+							TypeWithColor(14, 50, "It rains.");
+							TypeWithColor(15, 50, "Your horrible dancing has made it");
+							TypeWithColor(11, 50, "rain");
+							printf("\n");
+
+							nReachedEnd = 2;
+						}
+
+						else if (Player_a.Choice3 == 2)
+						{
+							//Premise
+							ClearScreen();
+							TypeWithColor(15, 50, "Using the brain that every person is born with,");
+							TypeWithColor(15, 50, "You cleverly grab the nearby");
+							TypeWithColor(14, 50, "ladder");
+							TypeWithColor(15, 50, "and prop it up against the side of the tree which isn't");
+							TypeWithColor(12, 50, "burning");
+							TypeWithColor(14, 50, "\"Floss\"");
+							TypeWithColor(15, 50, "and the");
 							TypeWithColor(14, 50, "\"Default Dance\".");
 							printf("\n");
 
@@ -441,8 +471,9 @@ void main()
 				scanf("%d", &Player_a.Choice2);
 
 				//Move to next case
-				nTimeRemaining = 4;
+				nTimeRemaining = 5;
 			break;
+
 				case 6:
 					ClearScreen();
 					TypeWithColor(15, 50, "This game is about");
