@@ -44,7 +44,7 @@ void main()
 		Player_a.Choice4 = 0;
 		Player_a.Choice5 = 0;
 
-		while(nTimeRemaining <= 7)
+		while(nTimeRemaining <= 7 && nReachedEnd == 0)
 		{
 			switch (nTimeRemaining)
 			{
@@ -283,38 +283,17 @@ void main()
 					//If option 2 was picked (Jump Down Stairs)
 					else if (Player_a.Choice1 == 2)
 					{
-							ClearScreen();
-							TypeWithColor(12, 50, "You're legs are broken.");
-							TypeWithColor(15, 50, "You're left leg looks like your right leg,");
-							TypeWithColor(15, 50, "and you're rihgt leg looks like it went through a");
-							TypeWithColor(12, 50, "meat tenderizer.");
-							printf("\n");
+							//If option 1 was picked (Limp towards yard)
+							if (Player_a.Choice2 == 1)
+							{
 
-							TypeWithColor(15, 50, "Otherwise your fine ^_^. Completely");
-							TypeWithColor(14, 50, "fine.");
-							printf("\n");
+							}
 
-							TypeWithColor(15, 50, "You are now in your");
-							TypeWithColor(11, 50, "living room,");
-							TypeWithColor(15, 50, "it seems that there is no one else home.");
-							TypeWithColor(15, 50, "It seems that someone left the");
-							TypeWithColor(11, 50, "TV");
-							TypeWithColor(15, 50, "turned on.");
-							printf("\n");
-							printf("\n");
+							//If option 2 was picked (Roll towards yard)
+							else if (Player_a.Choice2 == 2)
+							{
 
-							TypeWithColor(15, 30, "What do you do?");
-							printf("\n");
-
-							TypeWithColor(15, 50, "1.");
-							TypeWithColor(12, 50, "Limp");
-							TypeWithColor(15, 50, "towards the yard.");
-							printf("\n");
-
-							TypeWithColor(15, 50, "2.");
-							TypeWithColor(14, 50, "Roll");
-							TypeWithColor(15, 50, "towards your yard, maybe your body can do what your legs can't");
-							printf("\n");
+							}
 					}
 
 					printf(">>");
@@ -362,6 +341,7 @@ void main()
 							nReachedEnd = 2;
 						}
 
+						//If option 2 was picked (Use the Ladder)
 						else if (Player_a.Choice3 == 2)
 						{
 							//Premise
@@ -370,31 +350,50 @@ void main()
 							TypeWithColor(15, 50, "You cleverly grab the nearby");
 							TypeWithColor(14, 50, "ladder");
 							TypeWithColor(15, 50, "and prop it up against the side of the tree which isn't");
+							TypeWithColor(12, 50, "burning.");
+							printf("\n");
+
+							TypeWithColor(15, 50, "Racing the");
+							TypeWithColor(12, 50, "fire");
+							TypeWithColor(15, 50, "you hastily coax your");
+							TypeWithColor(14, 50, "pet");
+							TypeWithColor(15, 50, "towards you.");
+							printf("\n");
+
+							TypeWithColor(15, 50, "Unfortunately your");
+							TypeWithColor(14, 50, "pet");
+							TypeWithColor(15, 50, "doesn't seem to be the smartest of animals.");
+							printf("\n");
+
+							TypeWithColor(15, 50, "The");
+							TypeWithColor(15, 50, "fire");
+							TypeWithColor(11, 50, "singes your left foot and you begin to");
+							TypeWithColor(15, 50, "wobble.");
+							printf("\n");
+
+							TypeWithColor(15, 50, "Amazingly though, you find yourself");
+							TypeWithColor(11, 50, "floating,");
+							TypeWithColor(15, 50, "thinking quickly, although very confused, you consider your options.");
+							printf("\n");
+							printf("\n");
+
+							TypeWithColor(15, 30, "What do you do?");
+							printf("\n");
+
+							TypeWithColor(15, 50, "1. Fly towards your cat and retrieve it from the");
 							TypeWithColor(12, 50, "burning");
-							TypeWithColor(14, 50, "\"Floss\"");
-							TypeWithColor(15, 50, "and the");
-							TypeWithColor(14, 50, "\"Default Dance\".");
+							TypeWithColor(15, 50, "tree.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "The sky disliked that.");
+							TypeWithColor(15, 50, "2.");
+							TypeWithColor(14, 50, "Fly");
+							TypeWithColor(15, 50, "to the nearest fire station to get help.");
 							printf("\n");
-
-							TypeWithColor(15, 50, "In response to your");
-							TypeWithColor(12, 50, "shameful display");
-							TypeWithColor(15, 50, "and loss of dignity.");
-							printf("\n");
-
-							TypeWithColor(14, 50, "It rains.");
-							TypeWithColor(15, 50, "Your horrible dancing has made it");
-							TypeWithColor(11, 50, "rain");
-							printf("\n");
-
-							nReachedEnd = 2;
 						}
 					}
 
 					//If option 2 was picked (Watch TV)
-					else if(Player_a.Choice2 == 2)
+					else if(Player_a.Choice3 == 2)
 					{
 						//Premise
 						ClearScreen();
@@ -550,18 +549,24 @@ void main()
 					}
 
 					break;
-			}
+			}//End of switch
+		}//End of main game loop
 
-			if (nReachedEnd == 1)
-				TypeWithColor(14, 50, "Reached Ending One: Immense Lethargy");
-
-			if (nReachedEnd == 2)
-				TypeWithColor(14, 50, "Reached Ending Two: Immense Shame");
+		if (nReachedEnd == 1)
+		{
+			TypeWithColor(14, 50, "Reached Ending One: Immense Lethargy");
+			break;
 		}
-	}
-	while(nPlaying == 1);
 
-}
+		if (nReachedEnd == 2)
+		{
+			TypeWithColor(14, 50, "Reached Ending Two: Immense Shame");
+			break;
+		}
+
+	}//End of game
+	while(nPlaying == 1);
+}//End of main
 
 /*
 Codex:
