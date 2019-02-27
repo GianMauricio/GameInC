@@ -391,79 +391,12 @@ void main()
 							printf("\n");
 						}
 					}
-
-					//If option 2 was picked (Watch TV)
-					else if(Player_a.Choice3 == 2)
-					{
-						//Premise
-						ClearScreen();
-						TypeWithColor(12, 50, "Why.");
-						printf("\n");
-
-						TypeWithColor(15, 50, "You casually make your way to the couch facing the");
-						TypeWithColor(11, 50, "TV.");
-						printf("\n");
-
-						TypeWithColor(15, 50, "Outside the cries of");
-						TypeWithColor(12, 50, "pain");
-						TypeWithColor(15, 50, "and");
-						TypeWithColor(12, 50, "agony");
-						TypeWithColor(15, 50, "from your");
-						TypeWithColor(14, 50, "pet,");
-						TypeWithColor(15, 50, "almost made you feel guilty about your choices.");
-						printf("\n");
-
-						TypeWithColor(15, 50, "You come across a show which featured a burning tree");
-						TypeWithColor(12, 50, "\"Ugh fine\"");
-						TypeWithColor(15, 50, "you think to yourself, and begin to dial");
-						TypeWithColor(12, 50, "emergency services");
-						printf("\n");
-
-						TypeWithColor(15, 50, "After a good 30 minutes");
-						TypeWithColor(14, 50, "a firetruck arrived");
-						TypeWithColor(15, 50, "as if by some miracle, your pet survived!");
-						printf("\n");
-
-						TypeWithColor(15, 50, "Congratulations for being super lazy!");
-						nReachedEnd = 1;
-					}
 				}
 
 				//If option 2 was picked (Jump Down Stairs)
 				else if (Player_a.Choice1 == 2)
 				{
-						ClearScreen();
-						TypeWithColor(12, 50, "You're legs are broken.");
-						TypeWithColor(15, 50, "You're left leg looks like your right leg,");
-						TypeWithColor(15, 50, "and you're rihgt leg looks like it went through a");
-						TypeWithColor(12, 50, "meat tenderizer.");
-						printf("\n");
 
-						TypeWithColor(15, 50, "Otherwise your fine ^_^. Completely");
-						TypeWithColor(14, 50, "fine.");
-						printf("\n");
-
-						TypeWithColor(15, 50, "You are now in your");
-						TypeWithColor(11, 50, "living room,");
-						TypeWithColor(15, 50, "it seems that there is no one else home.");
-						TypeWithColor(15, 50, "It seems that someone left the");
-						TypeWithColor(11, 50, "TV");
-						TypeWithColor(15, 50, "turned on.");
-						printf("\n");
-						printf("\n");
-
-						TypeWithColor(15, 30, "What do you do?");
-						printf("\n");
-
-						TypeWithColor(15, 50, "1.");
-						TypeWithColor(12, 50, "Limp");
-						TypeWithColor(15, 50, "towards the yard.");
-						printf("\n");
-
-						TypeWithColor(15, 50, "2.");
-						TypeWithColor(14, 50, "Roll");
-						TypeWithColor(15, 50, "towards your yard, maybe your body can do what your legs can't");
-						printf("\n");
 				}
 
 				printf(">>");
