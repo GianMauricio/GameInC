@@ -28,6 +28,9 @@ struct Player
 void main()
 {
 	int nPlaying = 1;
+	int nTypeSpeed = 30;
+	int nFastTypeSpeed = 10;
+	int nSlowTypeSpeed = 80;
 
 	do
 	{
@@ -50,18 +53,18 @@ void main()
 			{
 				case 0:
 					ClearScreen();
-					TypeWithColor(15, 50, "Welcome to");
-					TypeWithColor(14, 50, "5 minutes to save the world!");
-					TypeWithColor(15, 50, "Not your average hero game ;)");
+					TypeWithColor(15, nTypeSpeed, "Welcome to");
+					TypeWithColor(14, nTypeSpeed, "5 minutes to save the world!");
+					TypeWithColor(15, nTypeSpeed, "Not your average hero game ;)");
 					printf("\n");
 					printf("\n");
 
-					TypeWithColor(15, 50, "1.");
-					TypeWithColor(14, 50, "Play");
+					TypeWithColor(15, nTypeSpeed, "1.");
+					TypeWithColor(14, nTypeSpeed, "Play");
 					printf("\n");
 
-					TypeWithColor(15, 50, "2.");
-					TypeWithColor(11, 50, "Instructions");
+					TypeWithColor(15, nTypeSpeed, "2.");
+					TypeWithColor(11, nTypeSpeed, "Instructions");
 					printf("\n");
 
 					printf(">>");
@@ -82,35 +85,35 @@ void main()
 				case 1:
 					//Premise
 					ClearScreen();
-					TypeWithColor(15, 50, "You are inside your");
-					TypeWithColor(11, 50, "bedroom");
-					TypeWithColor(15, 50, "outside your window you see a");
-					TypeWithColor(12, 50, "horrific");
-					TypeWithColor(15, 50, "sight.");
+					TypeWithColor(15, nTypeSpeed, "You are inside your");
+					TypeWithColor(11, nTypeSpeed, "bedroom");
+					TypeWithColor(15, nTypeSpeed, "outside your window you see a");
+					TypeWithColor(12, nTypeSpeed, "horrific");
+					TypeWithColor(15, nTypeSpeed, "sight.");
 					printf("\n");
 
-					TypeWithColor(15, 50, "Your");
-					TypeWithColor(14, 50, "pet");
-					TypeWithColor(15, 50, "is stuck in a");
-					TypeWithColor(12, 50, "burning");
-					TypeWithColor(15, 50, "tree.");
+					TypeWithColor(15, nTypeSpeed, "Your");
+					TypeWithColor(14, nTypeSpeed, "pet");
+					TypeWithColor(15, nTypeSpeed, "is stuck in a");
+					TypeWithColor(12, nTypeSpeed, "burning");
+					TypeWithColor(15, nTypeSpeed, "tree.");
 					printf("\n");
 					printf("\n");
 
 					//Choice
-					TypeWithColor(15, 30, "What do you do?");
+					TypeWithColor(15, nFastTypeSpeed, "What do you do?");
 					printf("\n");
 
 					//Option 1
-					TypeWithColor(15, 50, "1.");
-					TypeWithColor(14, 50, "Run");
-					TypeWithColor(15, 50, "down the stairs as quick as possible.");
+					TypeWithColor(15, nTypeSpeed, "1.");
+					TypeWithColor(14, nTypeSpeed, "Run");
+					TypeWithColor(15, nTypeSpeed, "down the stairs as quick as possible.");
 					printf("\n");
 
 					//Option 2
-					TypeWithColor(15, 50, "2.");
-					TypeWithColor(12, 50, "Jump");
-					TypeWithColor(15, 50, "down the stairs, risking your legs.");
+					TypeWithColor(15, nTypeSpeed, "2.");
+					TypeWithColor(12, nTypeSpeed, "Jump");
+					TypeWithColor(15, nTypeSpeed, "down the stairs, risking your legs.");
 					printf("\n");
 
 					printf(">>");
@@ -126,31 +129,31 @@ void main()
 					{
 							//Premise
 							ClearScreen();
-							TypeWithColor(15, 50, "You are now in your");
-							TypeWithColor(11, 50, "living room,");
-							TypeWithColor(15, 50, "it seems that there is no one else home.");
+							TypeWithColor(15, nTypeSpeed, "You are now in your");
+							TypeWithColor(11, nTypeSpeed, "living room,");
+							TypeWithColor(15, nTypeSpeed, "it seems that there is no one else home.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "It also seems that someone left the");
-							TypeWithColor(11, 50, "TV");
-							TypeWithColor(15, 50, "turned on.");
+							TypeWithColor(15, nTypeSpeed, "It also seems that someone left the");
+							TypeWithColor(11, nTypeSpeed, "TV");
+							TypeWithColor(15, nTypeSpeed, "turned on.");
 							printf("\n");
 							printf("\n");
 
 							//Choice
-							TypeWithColor(15, 30, "What do you do?");
+							TypeWithColor(15, nFastTypeSpeed, "What do you do?");
 							printf("\n");
 
 							//Option 1
-							TypeWithColor(15, 50, "1.");
-							TypeWithColor(14, 50, "Sprint");
-							TypeWithColor(15, 50, "towards the yard.");
+							TypeWithColor(15, nTypeSpeed, "1.");
+							TypeWithColor(14, nTypeSpeed, "Sprint");
+							TypeWithColor(15, nTypeSpeed, "towards the yard.");
 							printf("\n");
 
 							//Option 2
-							TypeWithColor(15, 50, "2.");
-							TypeWithColor(12, 50, "Watch TV");
-							TypeWithColor(15, 50, "because, why not?.");
+							TypeWithColor(15, nTypeSpeed, "2.");
+							TypeWithColor(12, nTypeSpeed, "Watch TV");
+							TypeWithColor(15, nTypeSpeed, "because, why not?.");
 							printf("\n");
 					}
 
@@ -159,43 +162,43 @@ void main()
 					{
 							//Premise
 							ClearScreen();
-							TypeWithColor(12, 50, "You're legs are broken.");
+							TypeWithColor(12, nTypeSpeed, "You're legs are broken.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "You're left leg looks like your right leg,");
-							TypeWithColor(15, 50, "and you're right leg looks like it went through a");
-							TypeWithColor(12, 50, "hydraulic press.");
+							TypeWithColor(15, nTypeSpeed, "You're left leg looks like your right leg,");
+							TypeWithColor(15, nTypeSpeed, "and you're right leg looks like it went through a");
+							TypeWithColor(12, nTypeSpeed, "hydraulic press.");
 							printf("\n");
 
 							//More premise
-							TypeWithColor(15, 50, "Otherwise your fine ^_^. Completely");
-							TypeWithColor(12, 50, "fine.");
+							TypeWithColor(15, nTypeSpeed, "Otherwise your fine ^_^. Completely");
+							TypeWithColor(12, nTypeSpeed, "fine.");
 							printf("\n");
 
 							//Even more premise
-							TypeWithColor(15, 50, "You are now in your");
-							TypeWithColor(11, 50, "living room,");
-							TypeWithColor(15, 50, "it seems that there is no one else home.");
-							TypeWithColor(15, 50, "It also seems that someone left the");
-							TypeWithColor(11, 50, "TV");
-							TypeWithColor(15, 50, "turned on.");
+							TypeWithColor(15, nTypeSpeed, "You are now in your");
+							TypeWithColor(11, nTypeSpeed, "living room,");
+							TypeWithColor(15, nTypeSpeed, "it seems that there is no one else home.");
+							TypeWithColor(15, nTypeSpeed, "It also seems that someone left the");
+							TypeWithColor(11, nTypeSpeed, "TV");
+							TypeWithColor(15, nTypeSpeed, "turned on.");
 							printf("\n");
 							printf("\n");
 
 							//Choice
-							TypeWithColor(15, 30, "What do you do?");
+							TypeWithColor(15, nFastTypeSpeed, "What do you do?");
 							printf("\n");
 
 							//Option 1
-							TypeWithColor(15, 50, "1.");
-							TypeWithColor(12, 50, "Limp");
-							TypeWithColor(15, 50, "towards the yard.");
+							TypeWithColor(15, nTypeSpeed, "1.");
+							TypeWithColor(12, nTypeSpeed, "Limp");
+							TypeWithColor(15, nTypeSpeed, "towards the yard.");
 							printf("\n");
 
 							//Option 2
-							TypeWithColor(15, 50, "2.");
-							TypeWithColor(14, 50, "Roll");
-							TypeWithColor(15, 50, "towards your yard, maybe your body can do what your legs can't");
+							TypeWithColor(15, nTypeSpeed, "2.");
+							TypeWithColor(14, nTypeSpeed, "Roll");
+							TypeWithColor(15, nTypeSpeed, "towards your yard, maybe your body can do what your legs can't");
 							printf("\n");
 					}
 
@@ -215,31 +218,31 @@ void main()
 						{
 							//Premise
 							ClearScreen();
-							TypeWithColor(15, 50, "You are now in your");
-							TypeWithColor(11, 50, "front yard,");
-							TypeWithColor(15, 50, "the tree is still");
-							TypeWithColor(12, 50, "burning");
-							TypeWithColor(15, 50, "and the");
-							TypeWithColor(12, 50, "fire");
-							TypeWithColor(15, 50, "has almost reached your");
-							TypeWithColor(14, 50, "pet.");
+							TypeWithColor(15, nTypeSpeed, "You are now in your");
+							TypeWithColor(11, nTypeSpeed, "front yard,");
+							TypeWithColor(15, nTypeSpeed, "the tree is still");
+							TypeWithColor(12, nTypeSpeed, "burning");
+							TypeWithColor(15, nTypeSpeed, "and the");
+							TypeWithColor(12, nTypeSpeed, "fire");
+							TypeWithColor(15, nTypeSpeed, "has almost reached your");
+							TypeWithColor(14, nTypeSpeed, "pet.");
 							printf("\n");
 
-							TypeWithColor(12, 50, "Time is running out!");
+							TypeWithColor(12, nTypeSpeed, "Time is running out!");
 							printf("\n");
 							printf("\n");
 
-							TypeWithColor(15, 30, "What do you do?");
+							TypeWithColor(15, nFastTypeSpeed, "What do you do?");
 							printf("\n");
 
-							TypeWithColor(15, 50, "1.");
-							TypeWithColor(12, 50, "Fortnite Dance");
-							TypeWithColor(15, 50, "at the tree. This will work trust me.");
+							TypeWithColor(15, nTypeSpeed, "1.");
+							TypeWithColor(12, nTypeSpeed, "Fortnite Dance");
+							TypeWithColor(15, nTypeSpeed, "at the tree. This will work trust me.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "2.");
-							TypeWithColor(12, 50, "Use a ladder");
-							TypeWithColor(15, 50, "to climb the tree. I mean, logically...?");
+							TypeWithColor(15, nTypeSpeed, "2.");
+							TypeWithColor(12, nTypeSpeed, "Use a ladder");
+							TypeWithColor(15, nTypeSpeed, "to climb the tree. I mean, logically...?");
 							printf("\n");
 						}
 
@@ -248,34 +251,34 @@ void main()
 						{
 							//Premise
 							ClearScreen();
-							TypeWithColor(12, 50, "Why.");
+							TypeWithColor(12, nSlowTypeSpeed, "Why.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "You casually make your way to the couch facing the");
-							TypeWithColor(11, 50, "TV.");
+							TypeWithColor(15, nTypeSpeed, "You casually make your way to the couch facing the");
+							TypeWithColor(11, nTypeSpeed, "TV.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "Outside the cries of");
-							TypeWithColor(12, 50, "pain");
-							TypeWithColor(15, 50, "and");
-							TypeWithColor(12, 50, "agony");
-							TypeWithColor(15, 50, "from your");
-							TypeWithColor(14, 50, "pet,");
-							TypeWithColor(15, 50, "almost made you feel guilty about your choices.");
+							TypeWithColor(15, nTypeSpeed, "Outside the cries of");
+							TypeWithColor(12, nTypeSpeed, "pain");
+							TypeWithColor(15, nTypeSpeed, "and");
+							TypeWithColor(12, nTypeSpeed, "agony");
+							TypeWithColor(15, nTypeSpeed, "from your");
+							TypeWithColor(14, nTypeSpeed, "pet,");
+							TypeWithColor(15, nTypeSpeed, "almost made you feel guilty about your choices.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "You come across a show which featured a burning tree");
-							TypeWithColor(12, 50, "\"Ugh fine\"");
-							TypeWithColor(15, 50, "you think to yourself, and begin to dial");
-							TypeWithColor(12, 50, "emergency services");
+							TypeWithColor(15, nTypeSpeed, "You come across a show which featured a burning tree");
+							TypeWithColor(12, nTypeSpeed, "\"Ugh fine\"");
+							TypeWithColor(15, nTypeSpeed, "you think to yourself, and begin to dial");
+							TypeWithColor(12, nTypeSpeed, "emergency services");
 							printf("\n");
 
-							TypeWithColor(15, 50, "After a good 30 minutes");
-							TypeWithColor(14, 50, "a firetruck arrived");
-							TypeWithColor(15, 50, "as if by some miracle, your pet survived!");
+							TypeWithColor(15, nTypeSpeed, "After a good 30 minutes");
+							TypeWithColor(14, nTypeSpeed, "a firetruck arrived");
+							TypeWithColor(15, nTypeSpeed, "as if by some miracle, your pet survived!");
 							printf("\n");
 
-							TypeWithColor(15, 50, "Congratulations for being super lazy!");
+							TypeWithColor(15, nTypeSpeed, "Congratulations for being super lazy!");
 							nReachedEnd = 1;
 						}
 					}
@@ -286,7 +289,36 @@ void main()
 							//If option 1 was picked (Limp towards yard)
 							if (Player_a.Choice2 == 1)
 							{
+								//Premise
+								ClearScreen();
+								TypeWithColor(12, nTypeSpeed, "Pain.");
+								TypeWithColor(15, nTypeSpeed, "the first thing you feel is");
+								TypeWithColor(12, nTypeSpeed, "immense pain.");
+								printf("\n");
 
+								TypeWithColor(12, nTypeSpeed, "burning");
+								TypeWithColor(15, nTypeSpeed, "and the");
+								TypeWithColor(12, nTypeSpeed, "fire");
+								TypeWithColor(15, nTypeSpeed, "has almost reached your");
+								TypeWithColor(14, nTypeSpeed, "pet.");
+								printf("\n");
+
+								TypeWithColor(12, nTypeSpeed, "Time is running out!");
+								printf("\n");
+								printf("\n");
+
+								TypeWithColor(15, nFastTypeSpeed, "What do you do?");
+								printf("\n");
+
+								TypeWithColor(15, nTypeSpeed, "1.");
+								TypeWithColor(12, nTypeSpeed, "Fortnite Dance");
+								TypeWithColor(15, nTypeSpeed, "at the tree. This will work trust me.");
+								printf("\n");
+
+								TypeWithColor(15, nTypeSpeed, "2.");
+								TypeWithColor(12, nTypeSpeed, "Use a ladder");
+								TypeWithColor(15, nTypeSpeed, "to climb the tree. I mean, logically...?");
+								printf("\n");
 							}
 
 							//If option 2 was picked (Roll towards yard)
@@ -296,8 +328,11 @@ void main()
 							}
 					}
 
-					printf(">>");
-					scanf("%d", &Player_a.Choice2);
+					if (nReachedEnd == 0)
+					{
+						printf(">>");
+						scanf("%d", &Player_a.Choice3);
+					}
 
 					//Move to next case
 					nTimeRemaining = 4;
@@ -315,27 +350,27 @@ void main()
 						{
 							//Premise
 							ClearScreen();
-							TypeWithColor(15, 50, "You, in your");
-							TypeWithColor(12, 50, "panic");
-							TypeWithColor(15, 50, "and");
-							TypeWithColor(12, 50, "confusion");
-							TypeWithColor(15, 50, "perfectly exucute the");
-							TypeWithColor(14, 50, "\"Floss\"");
-							TypeWithColor(15, 50, "and the");
-							TypeWithColor(14, 50, "\"Default Dance\".");
+							TypeWithColor(15, nTypeSpeed, "You, in your");
+							TypeWithColor(12, nTypeSpeed, "panic");
+							TypeWithColor(15, nTypeSpeed, "and");
+							TypeWithColor(12, nTypeSpeed, "confusion");
+							TypeWithColor(15, nTypeSpeed, "perfectly exucute the");
+							TypeWithColor(14, nTypeSpeed, "\"Floss\"");
+							TypeWithColor(15, nTypeSpeed, "and the");
+							TypeWithColor(14, nTypeSpeed, "\"Default Dance\".");
 							printf("\n");
 
-							TypeWithColor(15, 50, "The sky disliked that.");
+							TypeWithColor(15, nTypeSpeed, "The sky disliked that.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "In response to your");
-							TypeWithColor(12, 50, "shameful display");
-							TypeWithColor(15, 50, "and loss of dignity.");
+							TypeWithColor(15, nTypeSpeed, "In response to your");
+							TypeWithColor(12, nTypeSpeed, "shameful display");
+							TypeWithColor(15, nTypeSpeed, "and loss of dignity.");
 							printf("\n");
 
-							TypeWithColor(14, 50, "It rains.");
-							TypeWithColor(15, 50, "Your horrible dancing has made it");
-							TypeWithColor(11, 50, "rain");
+							TypeWithColor(14, nTypeSpeed, "It rains.");
+							TypeWithColor(15, nTypeSpeed, "Your horrible dancing has made it");
+							TypeWithColor(11, nTypeSpeed, "rain");
 							printf("\n");
 
 							nReachedEnd = 2;
@@ -346,48 +381,55 @@ void main()
 						{
 							//Premise
 							ClearScreen();
-							TypeWithColor(15, 50, "Using the brain that every person is born with,");
-							TypeWithColor(15, 50, "You cleverly grab the nearby");
-							TypeWithColor(14, 50, "ladder");
-							TypeWithColor(15, 50, "and prop it up against the side of the tree which isn't");
-							TypeWithColor(12, 50, "burning.");
+							TypeWithColor(15, nTypeSpeed, "Using the brain that every person is born with,");
+							TypeWithColor(15, nTypeSpeed, "You cleverly grab the nearby");
+							TypeWithColor(14, nTypeSpeed, "ladder");
+							TypeWithColor(15, nTypeSpeed, "and prop it up against the side of the tree which isn't");
+							TypeWithColor(12, nTypeSpeed, "burning.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "Racing the");
-							TypeWithColor(12, 50, "fire");
-							TypeWithColor(15, 50, "you hastily coax your");
-							TypeWithColor(14, 50, "pet");
-							TypeWithColor(15, 50, "towards you.");
+							TypeWithColor(15, nTypeSpeed, "Racing the");
+							TypeWithColor(12, nTypeSpeed, "fire");
+							TypeWithColor(15, nTypeSpeed, "you hastily coax your");
+							TypeWithColor(14, nTypeSpeed, "pet");
+							TypeWithColor(15, nTypeSpeed, "towards you.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "Unfortunately your");
-							TypeWithColor(14, 50, "pet");
-							TypeWithColor(15, 50, "doesn't seem to be the smartest of animals.");
+							TypeWithColor(15, nTypeSpeed, "Unfortunately your");
+							TypeWithColor(14, nTypeSpeed, "pet");
+							TypeWithColor(15, nTypeSpeed, "doesn't seem to be the smartest of animals.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "The");
-							TypeWithColor(15, 50, "fire");
-							TypeWithColor(11, 50, "singes your left foot and you begin to");
-							TypeWithColor(15, 50, "wobble.");
+							TypeWithColor(15, nTypeSpeed, "Your");
+							TypeWithColor(14, nTypeSpeed, "pet");
+							TypeWithColor(15, nTypeSpeed, "doesn't heed your calls, and the");
+							TypeWithColor(12, nTypeSpeed, "fire");
+							TypeWithColor(15, nTypeSpeed, "gets ever closer.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "Amazingly though, you find yourself");
-							TypeWithColor(11, 50, "floating,");
-							TypeWithColor(15, 50, "thinking quickly, although very confused, you consider your options.");
+							TypeWithColor(15, nTypeSpeed, "The");
+							TypeWithColor(15, nTypeSpeed, "fire");
+							TypeWithColor(11, nTypeSpeed, "singes your left foot and you begin to");
+							TypeWithColor(15, nTypeSpeed, "wobble.");
+							printf("\n");
+
+							TypeWithColor(15, nTypeSpeed, "Amazingly though, you find yourself");
+							TypeWithColor(11, nTypeSpeed, "floating,");
+							TypeWithColor(15, nTypeSpeed, "thinking quickly, although very confused, you consider your options.");
 							printf("\n");
 							printf("\n");
 
-							TypeWithColor(15, 30, "What do you do?");
+							TypeWithColor(15, nFastTypeSpeed, "What do you do?");
 							printf("\n");
 
-							TypeWithColor(15, 50, "1. Fly towards your cat and retrieve it from the");
-							TypeWithColor(12, 50, "burning");
-							TypeWithColor(15, 50, "tree.");
+							TypeWithColor(15, nTypeSpeed, "1. Fly towards your cat and retrieve it from the");
+							TypeWithColor(12, nTypeSpeed, "burning");
+							TypeWithColor(15, nTypeSpeed, "tree.");
 							printf("\n");
 
-							TypeWithColor(15, 50, "2.");
-							TypeWithColor(14, 50, "Fly");
-							TypeWithColor(15, 50, "to the nearest fire station to get help.");
+							TypeWithColor(15, nTypeSpeed, "2.");
+							TypeWithColor(14, nTypeSpeed, "Fly");
+							TypeWithColor(15, nTypeSpeed, "to the nearest fire station to get help.");
 							printf("\n");
 						}
 					}
@@ -399,101 +441,156 @@ void main()
 
 				}
 
-				printf(">>");
-				scanf("%d", &Player_a.Choice2);
+				if (nReachedEnd == 0)
+				{
+					printf(">>");
+					scanf("%d", &Player_a.Choice4);
+				}
 
 				//Move to next case
 				nTimeRemaining = 5;
 			break;
 
-				case 6:
+			case 5:
+				ClearScreen();
+
+				//If option 1 was picked (Get the Pet)
+				if(Player_a.Choice4 == 1)
+				{
+					//Premise
 					ClearScreen();
-					TypeWithColor(15, 50, "This game is about");
-					TypeWithColor(11, 50, "choices");
-					TypeWithColor(15, 50, "each time you make a different");
-					TypeWithColor(11, 50, "choice");
-					TypeWithColor(15, 50, "you get a different ending.");
+					TypeWithColor(15, nTypeSpeed, "You");
+					TypeWithColor(12, nTypeSpeed, "flail around");
+					TypeWithColor(15, nTypeSpeed, "a little, trying to get the hang of your new");
+					TypeWithColor(14, nTypeSpeed, "power.");
 					printf("\n");
 
-					TypeWithColor(15, 50, "We encourage replaying >w<.");
-					printf("\n");
-
-					TypeWithColor(15, 50, "If a word is");
-					TypeWithColor(14, 50, "yellow");
-					TypeWithColor(15, 50, "then that");
-					TypeWithColor(11, 50, "choice");
-					TypeWithColor(15, 50, "is a safer one, but not always the better one.");
-					printf("\n");
-
-					TypeWithColor(15, 50, "If a word is");
-					TypeWithColor(12, 50, "red");
-					TypeWithColor(15, 50, "then that");
-					TypeWithColor(11, 50, "choice");
-					TypeWithColor(15, 50, "is a riskier one, and may result in some consequences.");
-					printf("\n");
-
-					TypeWithColor(15, 50, "If a word is");
-					TypeWithColor(11, 50, "blue");
-					TypeWithColor(15, 50, "it means that it is decribing where you currently are, and what it looks like.");
+					TypeWithColor(15, nTypeSpeed, "Slowly, you ");
+					TypeWithColor(11, nTypeSpeed, "drift");
+					TypeWithColor(15, nTypeSpeed, "yourself over to your");
+					TypeWithColor(14, nTypeSpeed, "pet.");
 					printf("\n");
 					printf("\n");
 
-					TypeWithColor(15, 50, "1.");
-					TypeWithColor(14, 50, "Return");
-					TypeWithColor(15, 50, "to main menu.");
+					TypeWithColor(15, nTypeSpeed, "Your");
+					TypeWithColor(14, nTypeSpeed, "pet");
+					TypeWithColor(12, nTypeSpeed, "disliked");
+					TypeWithColor(15, nTypeSpeed, "that.");
+					printf("\n");
 					printf("\n");
 
-					TypeWithColor(15, 50, "2.");
-					TypeWithColor(12, 50, "Bloopers");
-					TypeWithColor(15, 50, "in the code.");
+					TypeWithColor(15, nTypeSpeed, "Your pet, looks at you with");
+					TypeWithColor(12, nTypeSpeed, "fear");
+					TypeWithColor(15, nTypeSpeed, "and inches away from you slowly.");
 					printf("\n");
 
-					printf(">>");
-					scanf("%d", &Player_a.Choice0);
+					TypeWithColor(14, nTypeSpeed, "With pleading desperation, you continue to");
+					TypeWithColor(15, nTypeSpeed, "Make your way towards your");
+					TypeWithColor(14, nTypeSpeed, "pet");
+					printf("\n");
 
-					if(Player_a.Choice0 == 1)
-					{
-						nTimeRemaining = 0;
-					}
+					nReachedEnd = 3;
+				}
 
-					else if (Player_a.Choice0 == 2)
-					{
-						nTimeRemaining = 7;
-					}
+			break;
+
+			case 6:
+				ClearScreen();
+				TypeWithColor(15, nTypeSpeed, "This game is about");
+				TypeWithColor(11, nTypeSpeed, "choices");
+				TypeWithColor(15, nTypeSpeed, "each time you make a different");
+				TypeWithColor(11, nTypeSpeed, "choice");
+				TypeWithColor(15, nTypeSpeed, "you get a different ending.");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "We encourage replaying >w<.");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "If a word is");
+				TypeWithColor(14, nTypeSpeed, "yellow");
+				TypeWithColor(15, nTypeSpeed, "then that");
+				TypeWithColor(11, nTypeSpeed, "choice");
+				TypeWithColor(15, nTypeSpeed, "is a safer one, but not always the better one.");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "If a word is");
+				TypeWithColor(12, nTypeSpeed, "red");
+				TypeWithColor(15, nTypeSpeed, "then that");
+				TypeWithColor(11, nTypeSpeed, "choice");
+				TypeWithColor(15, nTypeSpeed, "is a riskier one, and may result in some consequences.");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "If a word is");
+				TypeWithColor(11, nTypeSpeed, "blue");
+				TypeWithColor(15, nTypeSpeed, "it means that it is decribing where you currently are, and what it looks like.");
+				printf("\n");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "1.");
+				TypeWithColor(14, nTypeSpeed, "Return");
+				TypeWithColor(15, nTypeSpeed, "to main menu.");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "2.");
+				TypeWithColor(12, nTypeSpeed, "Bloopers");
+				TypeWithColor(15, nTypeSpeed, "in the code.");
+				printf("\n");
+
+				printf(">>");
+				scanf("%d", &Player_a.Choice0);
+
+				if(Player_a.Choice0 == 1)
+				{
+					nTimeRemaining = 0;
+				}
+
+				else if (Player_a.Choice0 == 2)
+				{
+					nTimeRemaining = 7;
+				}
+
+			break;
+
+			case 7:
+				ClearScreen();
+				TypeWithColor(15, nTypeSpeed, "I'll fill this up at a later date...");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "1.");
+				TypeWithColor(14, nTypeSpeed, "Return");
+				TypeWithColor(15, nTypeSpeed, "to main menu.");
+				printf("\n");
+
+				printf(">>");
+				scanf("%d", &Player_a.Choice0);
+
+				if(Player_a.Choice0 == 1)
+				{
+					nTimeRemaining = 0;
+				}
 
 				break;
-
-				case 7:
-					ClearScreen();
-					TypeWithColor(15, 50, "I'll fill this up at a later date...");
-					printf("\n");
-
-					TypeWithColor(15, 50, "1.");
-					TypeWithColor(14, 50, "Return");
-					TypeWithColor(15, 50, "to main menu.");
-					printf("\n");
-
-					printf(">>");
-					scanf("%d", &Player_a.Choice0);
-
-					if(Player_a.Choice0 == 1)
-					{
-						nTimeRemaining = 0;
-					}
-
-					break;
 			}//End of switch
 		}//End of main game loop
 
 		if (nReachedEnd == 1)
 		{
-			TypeWithColor(14, 50, "Reached Ending One: Immense Lethargy");
+			printf("\n");
+			TypeWithColor(14, nTypeSpeed, "Reached Ending One: Immense Lethargy");
 			break;
 		}
 
 		if (nReachedEnd == 2)
 		{
-			TypeWithColor(14, 50, "Reached Ending Two: Immense Shame");
+			printf("\n");
+			TypeWithColor(14, nTypeSpeed, "Reached Ending Two: Immense Shame");
+			break;
+		}
+
+		if (nReachedEnd == 3)
+		{
+			printf("\n");
+			TypeWithColor(14, nTypeSpeed, "Reached Ending Three: ...Into the Fire");
 			break;
 		}
 
