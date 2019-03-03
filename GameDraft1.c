@@ -316,8 +316,8 @@ void main()
 								printf("\n");
 
 								TypeWithColor(15, nTypeSpeed, "2.");
-								TypeWithColor(12, nTypeSpeed, "Run");
-								TypeWithColor(15, nTypeSpeed, "to the nearby");
+								TypeWithColor(12, nTypeSpeed, "Stumble");
+								TypeWithColor(15, nTypeSpeed, "towards the nearby");
 								TypeWithColor(11, nTypeSpeed, "ladder.");
 								printf("\n");
 							}
@@ -327,31 +327,62 @@ void main()
 							{
 								//Premise
 								ClearScreen();
-								TypeWithColor(12, nTypeSpeed, "burning");
-								TypeWithColor(15, nTypeSpeed, "and the");
+								TypeWithColor(15, nTypeSpeed, "The");
 								TypeWithColor(12, nTypeSpeed, "fire");
 								TypeWithColor(15, nTypeSpeed, "has almost reached your");
 								TypeWithColor(14, nTypeSpeed, "pet.");
 								printf("\n");
 
-								TypeWithColor(12, nTypeSpeed, "Time is running out!");
+								TypeWithColor(15, nTypeSpeed, "The");
+								TypeWithColor(12, nTypeSpeed, "pain");
+								TypeWithColor(15, nTypeSpeed, "in your legs is too much for you, and you");
+								TypeWithColor(12, nTypeSpeed, "collapse");
+								TypeWithColor(15, nTypeSpeed, "to the ground.");
+								printf("\n");
+
+								TypeWithColor(15, nTypeSpeed, "Not knowing what else to do, you");
+								TypeWithColor(12, nTypeSpeed, "desperately");
+								TypeWithColor(15, nTypeSpeed, "cry out for");
+								TypeWithColor(14, nTypeSpeed, "help.");
+								printf("\n");
+
+								TypeWithColor(15, nTypeSpeed, "In a shocking turn of events, shockwaves");
+								TypeWithColor(12, nTypeSpeed, "ripple");
+								TypeWithColor(15, nTypeSpeed, "outwards from your mouth and");
+								TypeWithColor(12, nTypeSpeed, "lambast");
+								TypeWithColor(15, nTypeSpeed, "the house, quickly");
+								TypeWithColor(12, nTypeSpeed, "demolishing");
+								TypeWithColor(15, nTypeSpeed, "it.");
+								printf("\n");
+
+								TypeWithColor(15, nSlowTypeSpeed, "\"That\'s not good\"");
+								printf("\n");
+
+								TypeWithColor(15, nTypeSpeed, "You think to yourself as you observe the");
+								TypeWithColor(12, nTypeSpeed, "rubble");
+								TypeWithColor(15, nTypeSpeed, "and");
+								TypeWithColor(12, nTypeSpeed, "detritus");
+								TypeWithColor(15, nTypeSpeed, "which was once your home.");
 								printf("\n");
 								printf("\n");
 
-								TypeWithColor(15, nFastTypeSpeed, "What do you do?");
+								TypeWithColor(14, nSlowTypeSpeed, "\"Meow\"");
 								printf("\n");
 
-								TypeWithColor(15, nTypeSpeed, "1.");
-								TypeWithColor(14, nTypeSpeed, "Grab");
-								TypeWithColor(15, nTypeSpeed, "the nearby");
-								TypeWithColor(11, nTypeSpeed, "rope.");
+								TypeWithColor(15, nTypeSpeed, "Comes a");
+								TypeWithColor(14, nTypeSpeed, "sound");
+								TypeWithColor(15, nTypeSpeed, "from behind you.");
 								printf("\n");
 
-								TypeWithColor(15, nTypeSpeed, "2.");
-								TypeWithColor(12, nTypeSpeed, "Run");
-								TypeWithColor(15, nTypeSpeed, "to the nearby");
-								TypeWithColor(11, nTypeSpeed, "ladder.");
+								TypeWithColor(15, nTypeSpeed, "It seems that your");
+								TypeWithColor(14, nTypeSpeed, "sonic outcry");
+								TypeWithColor(15, nTypeSpeed, "managed to extinguish the");
+								TypeWithColor(12, nTypeSpeed, "fire");
+								TypeWithColor(15, nTypeSpeed, "which once engangered your");
+								TypeWithColor(14, nTypeSpeed, "pet.");
 								printf("\n");
+
+								nReachedEnd = 5;
 							}
 					}
 
@@ -701,6 +732,13 @@ void main()
 		{
 			printf("\n");
 			TypeWithColor(14, nTypeSpeed, "Reached Ending Four: Fly faster next time");
+			break;
+		}
+
+		if (nReachedEnd == 5)
+		{
+			printf("\n");
+			TypeWithColor(14, nTypeSpeed, "Reached Ending Five: At least you saved your pet");
 			break;
 		}
 
