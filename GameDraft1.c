@@ -513,7 +513,21 @@ void main()
 				//If option 2 was picked (Jump Down Stairs)
 				else if (Player_a.Choice1 == 2)
 				{
+					//If option 1 was picked (Limp towards yard)
+					if (Player_a.Choice2 == 1)
+					{
+						//If option 1 was picked (Use rope)
+						if (Player_a.Choice3 == 1)
+						{
 
+						}
+
+						//If option 2 was picked (Use ladder)
+						else if (Player_a.Choice3 == 2)
+						{
+
+						}
+					}
 				}
 
 				if (nReachedEnd == 0)
