@@ -685,9 +685,37 @@ void main()
 									TypeWithColor(15, nTypeSpeed, "and inches away from you slowly.");
 									printf("\n");
 
-									TypeWithColor(14, nTypeSpeed, "With pleading desperation, you continue to");
-									TypeWithColor(15, nTypeSpeed, "Make your way towards your");
+									TypeWithColor(15, nTypeSpeed, "With pleading desperation, you continue to");
+									TypeWithColor(15, nTypeSpeed, "make your way towards your");
+									TypeWithColor(14, nTypeSpeed, "pet.");
+									printf("\n");
+
+									TypeWithColor(15, nTypeSpeed, "Both you and your");
 									TypeWithColor(14, nTypeSpeed, "pet");
+									TypeWithColor(15, nTypeSpeed, "are being closed in by the");
+									TypeWithColor(12, nTypeSpeed, "fire.");
+									printf("\n");
+
+									TypeWithColor(15, nTypeSpeed, "In a last ditch effort, you");
+									TypeWithColor(14, nTypeSpeed, "lunge");
+									TypeWithColor(15, nTypeSpeed, "towards your");
+									TypeWithColor(14, nTypeSpeed, "pet");
+									TypeWithColor(15, nTypeSpeed, "and");
+									TypeWithColor(12, nTypeSpeed, "tackle");
+									TypeWithColor(14, nTypeSpeed, "them to the ground");
+									printf("\n");
+
+									TypeWithColor(15, nTypeSpeed, "As you can your");
+									TypeWithColor(14, nTypeSpeed, "pet");
+									TypeWithColor(12, nTypeSpeed, "careen");
+									TypeWithColor(15, nTypeSpeed, "to the ground, you see a");
+									TypeWithColor(12, nTypeSpeed, "careen");
+									printf("\n");
+
+									TypeWithColor(15, nTypeSpeed, "Both you and your");
+									TypeWithColor(14, nTypeSpeed, "pet");
+									TypeWithColor(15, nTypeSpeed, "are being closed in by the");
+									TypeWithColor(12, nTypeSpeed, "fire.");
 									printf("\n");
 
 									nReachedEnd = 3;
