@@ -77,7 +77,7 @@ void main()
 
 					else if (Player_a.Choice0 == 2)
 					{
-						nTimeRemaining = 7;
+						nTimeRemaining = 6;
 					}
 
 				break;
@@ -830,32 +830,40 @@ void main()
 								{
 									//Premise
 									ClearScreen();
-									TypeWithColor(15, nTypeSpeed, "You");
-									TypeWithColor(15, nTypeSpeed, "pull yourself up the");
+									TypeWithColor(15, nTypeSpeed, "You thunder towards the");
 									TypeWithColor(14, nTypeSpeed, "ladder,");
-									TypeWithColor(10, nTypeSpeed, "3 rungs at a time.");
+									TypeWithColor(15, nTypeSpeed, "and plant your feet firmly on the first rung,");
+									TypeWithColor(15, nTypeSpeed, "ignoring the");
+									TypeWithColor(12, nTypeSpeed, "pain.");
 									printf("\n");
 
-									TypeWithColor(15, nTypeSpeed, "You lift your entire body up into the");
-									TypeWithColor(12, nTypeSpeed, "burning");
-									TypeWithColor(15, nTypeSpeed, "tree, and run towards your");
-									TypeWithColor(14, nTypeSpeed, "pet.");
+									TypeWithColor(15, nTypeSpeed, "Using the free hand you have, and your");
+									TypeWithColor(12, nTypeSpeed, "broken legs,");
+									TypeWithColor(15, nTypeSpeed, "you contort down the");
+									TypeWithColor(14, nTypeSpeed, "ladder,");
+									TypeWithColor(15, nTypeSpeed, "bracing the");
+									TypeWithColor(12, nTypeSpeed, "pain");
+									TypeWithColor(15, nTypeSpeed, "as you go.");
 									printf("\n");
 
-									TypeWithColor(15, nTypeSpeed, "You grab your");
-									TypeWithColor(14, nTypeSpeed, "pet");
-									TypeWithColor(15, nTypeSpeed, "and hold them close to you;");
-									TypeWithColor(15, nTypeSpeed, "then you remember the");
-									TypeWithColor(12, nTypeSpeed, "fire.");
+									TypeWithColor(15, nTypeSpeed, "As you approach the ground you miss");
+									TypeWithColor(12, nTypeSpeed, "miss");
+									TypeWithColor(15, nTypeSpeed, "the last rung and your footing");
+									TypeWithColor(12, nTypeSpeed, "slips.");
 									printf("\n");
 
-									TypeWithColor(15, nTypeSpeed, "You turn around and face the");
-									TypeWithColor(12, nTypeSpeed, "fire");
-									TypeWithColor(15, nTypeSpeed, "and notice that the");
-									TypeWithColor(14, nTypeSpeed, "ladder");
-									TypeWithColor(15, nTypeSpeed, "is just inches away from you, but the");
-									TypeWithColor(12, nTypeSpeed, "fire");
-									TypeWithColor(15, nTypeSpeed, "is spreading towards it fast!");
+									TypeWithColor(15, nTypeSpeed, "You hit the ground,");
+									TypeWithColor(12, nSlowTypeSpeed, "hard.");
+									printf("\n");
+
+
+									TypeWithColor(15, nTypeSpeed, "You are stricken with a bout of immense");
+									TypeWithColor(12, nTypeSpeed, "pain,");
+									TypeWithColor(15, nTypeSpeed, "your hands");
+									TypeWithColor(10, nTypeSpeed, "clench");
+									TypeWithColor(15, nTypeSpeed, "with");
+									TypeWithColor(12, nTypeSpeed, "pain");
+									TypeWithColor(15, nTypeSpeed, "but you regain your footing on solid ground");
 									printf("\n");
 									printf("\n");
 								}
@@ -872,10 +880,6 @@ void main()
 				break;
 
 				case 6:
-
-				break;
-
-				case 7:
 					ClearScreen();
 					TypeWithColor(15, nTypeSpeed, "This game is about");
 					TypeWithColor(11, nTypeSpeed, "choices");
@@ -932,12 +936,12 @@ void main()
 
 					else if (Player_a.Choice0 == 2)
 					{
-						nTimeRemaining = 8;
+						nTimeRemaining = 7;
 					}
 
 				break;
 
-				case 8:
+				case 7:
 					ClearScreen();
 					TypeWithColor(15, nTypeSpeed, "I'll fill this up at a later date...");
 					printf("\n");
