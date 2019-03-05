@@ -4,6 +4,12 @@
 *	Ext. Reference: StackOverflow
 *	Purpose: Draft for the game using Story 1
 * 	Notes: Any and all changes to the game will be reflected here
+*				 : Code bloopers are still empty..?
+* Functions:
+* 	1. TypeWithColor: Displays a string of characters with a type effect
+* 			and a color (Further detailed in function)
+*		2. ClearScreen: Clears the current contents of the terminal
+*		3. Main: contains the menu and the game loop
 */
 
 #include <windows.h>
@@ -12,6 +18,7 @@
 #include <stdio.h>
 
 void TypeWithColor(int ColorCode, int TypeSpeed, char text[]);
+void ClearScreen();
 
 //Stores the players' choices
 struct Player
@@ -31,6 +38,7 @@ void main()
 	int nTypeSpeed = 25;
 	int nFastTypeSpeed = 10;
 	int nSlowTypeSpeed = 100;
+	int Version = 0;
 
 	do
 	{
@@ -1126,12 +1134,78 @@ void main()
 
 				case 7:
 					ClearScreen();
-					TypeWithColor(15, nTypeSpeed, "I'll fill this up at a later date...");
+					TypeWithColor(15, nFastTypeSpeed, "Curious little");
+					TypeWithColor(14, nFastTypeSpeed, "player");
+					TypeWithColor(15, nFastTypeSpeed, "aren\'t you?");
+					printf("\n");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Choices of the player always lead to the same ending.");
+					TypeWithColor(10, nFastTypeSpeed, "(Fixed)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Punctuation marks shouldn\'t be colored");
+					TypeWithColor(12, nFastTypeSpeed, "(Not fixed)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "-");
+					TypeWithColor(12, nFastTypeSpeed, "\"Marty is fat\"");
+					TypeWithColor(15, nFastTypeSpeed, "was found in the code.");
+					TypeWithColor(10, nFastTypeSpeed, "(Fixed?)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Legacy code still persists on the Git.");
+					TypeWithColor(10, nFastTypeSpeed, "(Fixed)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Add foolproofing to the code.");
+					TypeWithColor(12, nFastTypeSpeed, "(Not fixed)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Persistent warning for");
+					TypeWithColor(12, nFastTypeSpeed, "conflicting");
+					TypeWithColor(15, nFastTypeSpeed, "types for the");
+					TypeWithColor(10, nFastTypeSpeed, "ClearScreen");
+					TypeWithColor(15, nFastTypeSpeed, "function.");
+					TypeWithColor(10, nFastTypeSpeed, "(Fixed)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Function for add sound doesn\'t work");
+					TypeWithColor(12, nFastTypeSpeed, "(Not fixed)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Function for add sound doesn\'t work");
+					TypeWithColor(12, nFastTypeSpeed, "(Not fixed)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Find ways to shorten the code");
+					TypeWithColor(10, nFastTypeSpeed, "(Fixed)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Function for typing and for changing the color can be consolidated");
+					TypeWithColor(10, nFastTypeSpeed, "(Fixed)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Implement");
+					TypeWithColor(10, nFastTypeSpeed, "ChangeLog");
+					TypeWithColor(10, nFastTypeSpeed, "(Fixed)");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "- Consider adding UI?");
+					TypeWithColor(12, nFastTypeSpeed, "(Not fixed)");
+					TypeWithColor(15, nFastTypeSpeed, "(Didn\'t even try TBH)");
+					printf("\n");
 					printf("\n");
 
 					TypeWithColor(15, nTypeSpeed, "1.");
 					TypeWithColor(14, nTypeSpeed, "Return");
 					TypeWithColor(15, nTypeSpeed, "to main menu.");
+					printf("\n");
+
+					TypeWithColor(15, nTypeSpeed, "2.");
+					TypeWithColor(14, nTypeSpeed, "View");
+					TypeWithColor(15, nTypeSpeed, "full");
+					TypeWithColor(10, nTypeSpeed, "ChangeLog.");
 					printf("\n");
 
 					printf(">>");
@@ -1142,6 +1216,134 @@ void main()
 						nTimeRemaining = 0;
 					}
 
+					else if(Player_a.Choice0 == 1)
+					{
+						nTimeRemaining = 8;
+					}
+
+				break;
+
+				case 8:
+					ClearScreen();
+					TypeWithColor(15, nFastTypeSpeed, "Begin");
+					TypeWithColor(10, nFastTypeSpeed, "ChangeLog.");
+					printf("\n");
+					printf("\n");
+
+					TypeWithColor(15, nFastTypeSpeed, "Which version would you like to view?");
+					printf("\n");
+					printf("\n");
+
+					TypeWithColor(15, nTypeSpeed, "1. Version 1");
+					printf("\n");
+
+					TypeWithColor(15, nTypeSpeed, "2. Version 2");
+					printf("\n");
+
+					TypeWithColor(15, nTypeSpeed, "3. Version 3");
+					printf("\n");
+
+					TypeWithColor(15, nTypeSpeed, "4. Version 4");
+					printf("\n");
+
+					printf(">>");
+					scanf("%d", &Version);
+
+					switch(Version)
+					{
+						case 1:
+							TypeWithColor(15, nFastTypeSpeed, "Version 1:");
+							printf("\n");
+
+							TypeWithColor(10, nFastTypeSpeed, "- Tested switch structure");
+							printf("\n");
+
+							TypeWithColor(10, nFastTypeSpeed, "- Created basic function for typing effect");
+							printf("\n");
+
+							TypeWithColor(10, nFastTypeSpeed, "- Created basic function for color change");
+							printf("\n");
+
+							TypeWithColor(12, nFastTypeSpeed, "- Problem with story (there is none)");
+							printf("\n");
+
+							TypeWithColor(12, nFastTypeSpeed, "- Problem with ConsoleAttributes, causes exit return status error");
+							printf("\n");
+						break;
+
+						case 2:
+							TypeWithColor(15, nFastTypeSpeed, "Version 2:");
+							printf("\n");
+
+							TypeWithColor(12, nFastTypeSpeed, "- Deleted color fuction");
+							printf("\n");
+
+							TypeWithColor(10, nFastTypeSpeed, "- Created composite function for typing effect with color");
+							printf("\n");
+
+							TypeWithColor(12, nFastTypeSpeed, "- Deleted color change function");
+							printf("\n");
+
+							TypeWithColor(10, nFastTypeSpeed, "- Added story");
+							printf("\n");
+
+							TypeWithColor(12, nFastTypeSpeed, "- Problem with ConsoleAttributes, causes exit return status error");
+							printf("\n");
+						break;
+
+						case 3:
+							TypeWithColor(15, nFastTypeSpeed, "Version 3:");
+							printf("\n");
+
+							TypeWithColor(10, nFastTypeSpeed, "- Optimized the if-else statements to make them less obtuse");
+							printf("\n");
+
+							TypeWithColor(10, nFastTypeSpeed, "- Encoded about 50% of the story");
+							printf("\n");
+
+							TypeWithColor(12, nFastTypeSpeed, "- Encountered issues with switch statement lacking a default statement");
+							printf("\n");
+						break;
+
+						case 4:
+							TypeWithColor(15, nFastTypeSpeed, "Version 4:");
+							printf("\n");
+
+							TypeWithColor(10, nFastTypeSpeed, "- Added 2 endings to the original story");
+							printf("\n");
+
+							TypeWithColor(10, nFastTypeSpeed, "- Encoded about 90% of the story");
+							printf("\n");
+
+							TypeWithColor(12, nFastTypeSpeed, "- Encountered issues with switch statement lacking a default statement");
+							printf("\n");
+						break;
+					}
+
+					printf("\n");
+					printf("\n");
+					TypeWithColor(15, nTypeSpeed, "1.");
+					TypeWithColor(14, nTypeSpeed, "Return");
+					TypeWithColor(15, nTypeSpeed, "to main menu.");
+					printf("\n");
+
+					TypeWithColor(15, nTypeSpeed, "2.");
+					TypeWithColor(14, nTypeSpeed, "View");
+					TypeWithColor(15, nTypeSpeed, "another version.");
+					printf("\n");
+
+					printf(">>");
+					scanf("%d", &Player_a.Choice0);
+
+					if(Player_a.Choice0 == 1)
+					{
+						nTimeRemaining = 0;
+					}
+
+					else if(Player_a.Choice0 == 2)
+					{
+						nTimeRemaining = 8;
+					}
 				break;
 			}//End of switch
 		}//End of main game loop
@@ -1209,6 +1411,33 @@ void main()
 			if (Player_a.Choice5 == 1)
 			{
 				ClearScreen();
+				TypeWithColor(15, nTypeSpeed, "You\'re lying on your side, and you find it very hard to");
+				TypeWithColor(12, nTypeSpeed, "breathe.");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "You know that you\'re");
+				TypeWithColor(12, nTypeSpeed, "dying.");
+				printf("\n");
+
+				TypeWithColor(15, (nTypeSpeed + 20), "Your");
+				TypeWithColor(12, (nTypeSpeed + 20), "consiousness fades.");
+				printf("\n");
+
+				TypeWithColor(15, (nTypeSpeed + 20), "You know that you\'re");
+				TypeWithColor(12, (nTypeSpeed + 20), "dying.");
+				printf("\n");
+
+				TypeWithColor(15, (nTypeSpeed + 50), "You feel your");
+				TypeWithColor(14, (nTypeSpeed + 50), "pet");
+				TypeWithColor(15, (nTypeSpeed + 50), "climb out of your arms.");
+				printf("\n");
+
+				TypeWithColor(15, (nSlowTypeSpeed + 30), "And though, you know that you\'re");
+				TypeWithColor(12, (nSlowTypeSpeed + 30), "dying;");
+				TypeWithColor(15, (nSlowTypeSpeed + 30), "you can do so happily.");
+				printf("\n");
+				printf("\n");
+
 				TypeWithColor(14, nSlowTypeSpeed, "Reached Ending Seven:");
 				TypeWithColor(10, nSlowTypeSpeed, "A True Hero");
 			}
@@ -1216,6 +1445,43 @@ void main()
 			else if (Player_a.Choice5 == 2)
 			{
 				ClearScreen();
+				TypeWithColor(15, nTypeSpeed, "You\'re lying on your side, and you find it very hard to");
+				TypeWithColor(12, nTypeSpeed, "breathe.");
+				printf("\n");
+				printf("\n");
+
+				TypeWithColor(12, nSlowTypeSpeed, "Blood.");
+				printf("\n");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "The first thing you notice is the feeling of");
+				TypeWithColor(12, nTypeSpeed, "blood");
+				TypeWithColor(15, nTypeSpeed, "across your body, you ignore it.");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "You take in a breath of air, and you smell the");
+				TypeWithColor(12, nTypeSpeed, "putrid death");
+				TypeWithColor(15, nTypeSpeed, "and");
+				TypeWithColor(12, nTypeSpeed, "charred wood");
+				TypeWithColor(15, nTypeSpeed, "in the air, you ignore that too.");
+				printf("\n");
+
+				TypeWithColor(15, nTypeSpeed, "You stand up, and");
+				TypeWithColor(12, nTypeSpeed, "pain");
+				TypeWithColor(15, nTypeSpeed, "shoots through your legs, it\'s easy to ignore that now...");
+				printf("\n");
+
+				TypeWithColor(15, nSlowTypeSpeed, "You look back, and you see the");
+				TypeWithColor(12, nSlowTypeSpeed, "spilled entrails");
+				TypeWithColor(15, nSlowTypeSpeed, "of your");
+				TypeWithColor(14, nSlowTypeSpeed, "pet,");
+				TypeWithColor(15, nSlowTypeSpeed, "you close your eyes, and ignore that as well.");
+				printf("\n");
+
+				TypeWithColor(15, nSlowTypeSpeed, "You walk away.");
+				printf("\n");
+				printf("\n");
+
 				TypeWithColor(14, nSlowTypeSpeed, "Reached Ending Eight:");
 				TypeWithColor(12, nSlowTypeSpeed, "Only Human");
 			}
