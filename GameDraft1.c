@@ -28,9 +28,9 @@ struct Player
 void main()
 {
 	int nPlaying = 1;
-	int nTypeSpeed = 10;
+	int nTypeSpeed = 25;
 	int nFastTypeSpeed = 10;
-	int nSlowTypeSpeed = 80;
+	int nSlowTypeSpeed = 100;
 
 	do
 	{
