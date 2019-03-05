@@ -1306,13 +1306,13 @@ void main()
 						break;
 
 						case 4:
-							TypeWithColor(15, nFastTypeSpeed, "Version 3:");
+							TypeWithColor(15, nFastTypeSpeed, "Version 4:");
 							printf("\n");
 
-							TypeWithColor(10, nFastTypeSpeed, "- Optimized the if-else statements to make them less obtuse");
+							TypeWithColor(10, nFastTypeSpeed, "- Added 2 endings to the original story");
 							printf("\n");
 
-							TypeWithColor(10, nFastTypeSpeed, "- Encoded about 50% of the story");
+							TypeWithColor(10, nFastTypeSpeed, "- Encoded about 90% of the story");
 							printf("\n");
 
 							TypeWithColor(12, nFastTypeSpeed, "- Encountered issues with switch statement lacking a default statement");
@@ -1338,6 +1338,11 @@ void main()
 					if(Player_a.Choice0 == 1)
 					{
 						nTimeRemaining = 0;
+					}
+
+					else if(Player_a.Choice0 == 2)
+					{
+						nTimeRemaining = 8;
 					}
 				break;
 			}//End of switch
