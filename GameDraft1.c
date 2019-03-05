@@ -1267,7 +1267,7 @@ void main()
 
 				printf("\n");
 				TypeWithColor(14, nSlowTypeSpeed, "Reached Ending Eleven:");
-				TypeWithColor(12, nSlowTypeSpeed, "");
+				TypeWithColor(12, nSlowTypeSpeed, "The Best Ending");
 			}
 		}
 
